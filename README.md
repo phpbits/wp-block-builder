@@ -12,7 +12,7 @@ A foundation for WordPress Gutenberg blocks plugin development that aims to prov
 
 ## Installation
 
-**WP Block Builder** is available through npm.
+**WP Block Builder** is available through npm. Run this command inside `wp-content/plugins` folder to start the installation.
 
 ```sh
 $ npx wp-block-builder
