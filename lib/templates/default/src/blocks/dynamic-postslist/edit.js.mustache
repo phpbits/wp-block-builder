@@ -50,12 +50,12 @@ class Edit extends Component {
 				<Fragment>
 					<Placeholder
 						icon="excerpt-view"
-						label={ __( 'Posts List Block', 'postslist-block' ) }
+						label={ __( 'Posts List Block', '{{textdomain}}' ) }
 					>
 						{ ! Array.isArray( postsList ) ? (
 							<Spinner />
 						) : (
-							__( 'No posts found.', 'postslist-block' )
+							__( 'No posts found.', '{{textdomain}}' )
 						) }
 					</Placeholder>
 				</Fragment>
@@ -97,7 +97,7 @@ class Edit extends Component {
 											) ||
 												__(
 													'(Untitled)',
-													'postslist-block'
+													'{{textdomain}}'
 												) }
 										</a>
 									</h2>

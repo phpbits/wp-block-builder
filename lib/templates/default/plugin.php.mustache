@@ -1,21 +1,25 @@
 <?php
 /**
- * Plugin Name: Block Builder
- * Plugin URI: http://wordpress.org/plugins/breadcrumbs-block
- * Description: Breadcrumbs block for WordPress Gutenberg block editor.
- * Version: 1.0
- * Author: Jeffrey Carandang
- * Author URI: https://jeffreycarandang.com/
- * Text Domain: block-builder
- * Domain Path: languages
+ * Plugin Name:     {{title}}
+{{#description}}
+ * Description:     {{description}}
+{{/description}}
+ * Version:         {{version}}
+{{#author}}
+ * Author:          {{author}}
+{{/author}}
+{{#license}}
+ * License:         {{license}}
+{{/license}}
+{{#licenseURI}}
+ * License URI:     {{{licenseURI}}}
+{{/licenseURI}}
+ * Text Domain:     {{textdomain}}
  *
- * @category Gutenberg
- * @author Jeffrey Carandang
- * @version 1.0
- * @package Breadcrumbs_Block
+ * @package         {{namespace}}
  */
 
-namespace Phpbits\BlockBuilder;
+namespace  {{namespaceSnakeCase}}\{{slugSnakeCase}};
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -56,7 +60,7 @@ function block_assets() {
 
 	// Styles.
 	wp_enqueue_style(
-		'block-builder-frontend',
+		'{{namespace}}-{{slug}}-frontend',
 		plugins_url( '/build/style-index.css', __FILE__ ),
 		array(),
 		asset_file( 'style-index', 'version' )
@@ -78,7 +82,7 @@ function editor_assets() {
 
 	// Styles.
 	wp_enqueue_style(
-		'block-builder-editor',
+		'{{namespace}}-{{slug}}-editor',
 		plugins_url( '/build/index.css', __FILE__ ),
 		array(),
 		asset_file( 'index', 'version' )
@@ -86,7 +90,7 @@ function editor_assets() {
 
 	// Scripts.
 	wp_enqueue_script(
-		'block-builder-editor',
+		'{{namespace}}-{{slug}}-editor',
 		plugins_url( '/build/index.js', __FILE__ ),
 		array_merge( asset_file( 'index', 'dependencies' ), array( 'wp-api', 'wp-compose' ) ),
 		asset_file( 'index', 'version' ),

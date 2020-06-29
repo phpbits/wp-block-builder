@@ -21,16 +21,16 @@ import './style.scss';
 const { name, category, attributes, supports } = metadata;
 
 const settings = {
-	title: __( 'Posts List', 'block-builder' ),
+	title: __( 'Posts List', '{{textdomain}}' ),
 	description: __(
 		'Display posts list with defined number of items to be shown.',
-		'block-builder'
+		'{{textdomain}}'
 	),
 	icon: 'excerpt-view',
 	keywords: [
-		__( 'posts', 'block-builder' ),
-		__( 'post', 'block-builder' ),
-		__( 'blog', 'block-builder' ),
+		__( 'posts', '{{textdomain}}' ),
+		__( 'post', '{{textdomain}}' ),
+		__( 'blog', '{{textdomain}}' ),
 	],
 	attributes,
 	supports,

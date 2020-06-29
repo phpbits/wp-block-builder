@@ -2,10 +2,10 @@
 /**
  * Server-side rendering of the `phpbits/postslist` block.
  *
- * @package Phpbits\BlockBuilder
+ * @package {{namespaceSnakeCase}}\{{slugSnakeCase}}
  */
 
-namespace Phpbits\BlockBuilder;
+namespace  {{namespaceSnakeCase}}\{{slugSnakeCase}}\DynamicBlock;
 
 /**
  * Renders the block on server.
@@ -44,7 +44,7 @@ function render_postslist_block( $attributes ) {
 			$title = get_the_title( $post_id );
 
 			if ( ! $title ) {
-				$title = __( 'Untitled', 'postslist-block' );
+				$title = __( 'Untitled', '{{textdomain}}' );
 			}
 
 			/* Get the post excerpy */

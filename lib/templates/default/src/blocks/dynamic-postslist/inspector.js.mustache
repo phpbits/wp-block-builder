@@ -19,13 +19,13 @@ class Inspector extends Component {
 			<Fragment>
 				<InspectorControls>
 					<PanelBody
-						title={ __( 'Post Settings', 'postslist-block' ) }
+						title={ __( 'Post Settings', '{{textdomain}}' ) }
 					>
 						<RangeControl
-							label={ __( 'Number of posts', 'postslist-block' ) }
+							label={ __( 'Number of posts', '{{textdomain}}' ) }
 							help={ __(
 								'Change the number of posts displayed.',
-								'postslist-block'
+								'{{textdomain}}'
 							) }
 							value={ postsToShow }
 							onChange={ ( value ) =>

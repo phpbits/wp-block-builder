@@ -22,13 +22,13 @@ import './style.scss';
 const { name, category, attributes, supports } = metadata;
 
 const settings = {
-	title: __( 'Container', 'block-builder' ),
-	description: __( 'Provide custom container.', 'block-builder' ),
+	title: __( 'Container', '{{textdomain}}' ),
+	description: __( 'Provide custom container.', '{{textdomain}}' ),
 	icon: 'editor-kitchensink',
 	keywords: [
-		__( 'container', 'block-builder' ),
-		__( 'wrapper', 'block-builder' ),
-		__( 'section', 'block-builder' ),
+		__( 'container', '{{textdomain}}' ),
+		__( 'wrapper', '{{textdomain}}' ),
+		__( 'section', '{{textdomain}}' ),
 	],
 	attributes,
 	supports,
