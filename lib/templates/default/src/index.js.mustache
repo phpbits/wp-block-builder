@@ -1,0 +1,2 @@
+// Internal dependencies
+import './blocks';
