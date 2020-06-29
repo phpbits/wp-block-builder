@@ -1,6 +1,6 @@
 {
 	"name": "wp-block-builder",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A foundation for WordPress Gutenberg blocks plugin development that aims to provide clear and concise guide for building your first block plugin.",
 	"author": "Jeffrey Carandang (https://twitter.com/phpbits)",
 	"license": "GPL-2.0-or-later",
