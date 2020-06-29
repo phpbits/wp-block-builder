@@ -11,9 +11,6 @@
 {{#license}}
  * License:         {{license}}
 {{/license}}
-{{#licenseURI}}
- * License URI:     {{{licenseURI}}}
-{{/licenseURI}}
  * Text Domain:     {{textdomain}}
  *
  * @package         {{namespace}}
@@ -33,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return void
  */
 function load_textdomain() {
-	load_plugin_textdomain( 'block-builder', false, dirname( plugin_basename( plugin_dir_path( __FILE__ ) ) ) . '/languages/' );
+	load_plugin_textdomain( '{{textdomain}}', false, dirname( plugin_basename( plugin_dir_path( __FILE__ ) ) ) . '/languages/' );
 }
 
 add_action( 'plugins_loaded', __NAMESPACE__ . '\load_textdomain', 99 );
@@ -45,7 +42,7 @@ add_action( 'plugins_loaded', __NAMESPACE__ . '\load_textdomain', 99 );
  */
 function block_localization() {
 	if ( function_exists( 'wp_set_script_translations' ) ) {
-		wp_set_script_translations( 'block-builder' );
+		wp_set_script_translations( '{{textdomain}}' );
 	}
 }
 

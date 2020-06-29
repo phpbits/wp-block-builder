@@ -17,7 +17,8 @@
     "start": "wp-scripts start",
     "test:e2e": "wp-scripts test-e2e",
     "test:unit": "wp-scripts test-unit-js",
-    "makepot": "wp i18n make-pot . languages/block-builder.pot --exclude=node_modules,vendor,build"
+    "makepot": "wp i18n make-pot . languages/block-builder.pot --exclude=node_modules,vendor,build",
+    "postinstall": "wp-scripts build && composer install"
   },
   "repository": {
     "type": "git",
