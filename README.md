@@ -41,19 +41,24 @@ Series of questions will automatically be asked via CLI with regards to plugin i
 All the required npm and composer packages will be automatically installed after the setup questions. This WordPress blocks plugin configuration is the one I've been using and it battle-tested. This config comes with:
 
 📦 Multiple Gutenberg blocks sample
+
 	* **Posts List**: a dynamic gutenberg block that displays configurable number of posts with title, featured image, post meta and excerpt. This block provides extensive code resources when it comes to building dynamic gutenberg block.
 	* **Custom Container**: regular sample block using `InnerBlocks`. This block will let you follow the usage of inner blocks and custom color supports.
 
 👨‍💻 PostCSS ready
+
 	* easily add both editor and frontend styling via configured `wp-scripts`. Both sample blocks are showing how to include the `.scss` files which will automagically be generated on the `builds` folder.
 
 🇵🇭 Translation ready
+
 	* `languages` folder will automatically be generated on `npm build` or `npm makepot`. Both `.php` and `.js` files will be included on the translation process.
 
 ✅ ESLint, Stylint and Prettier configurations
+
 	* WordPress standards for CSS and JS formatting are included with auto fixing configuration via `npm run lint:js-fix` or `npm run lint:css-fix`.
 
 🔃 Browser-sync live reload
+
 	* Live reloading is also available with configurable `local.json` file to easily add your WordPress website link.
 
 ```sh
@@ -61,9 +66,11 @@ All the required npm and composer packages will be automatically installed after
 ```
 
 📃 PHP file WordPress coding standards
+
 	* WordPress coding standards check for `.php` files is also configure via composer. Just run `composer run format` to check which one needs changing.
 
 ⚙️ WebPack configurations
+
 	* `webpack.config.js` is available for you to easily extend it with your own configs.
 
 [↑ Go up to Table of contents](#table-of-contents)
