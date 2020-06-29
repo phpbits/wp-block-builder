@@ -42,8 +42,8 @@ All the required npm and composer packages will be automatically installed after
 
 📦 Multiple Gutenberg blocks sample
 
-	* **Posts List**: a dynamic gutenberg block that displays configurable number of posts with title, featured image, post meta and excerpt. This block provides extensive code resources when it comes to building dynamic gutenberg block.
-	* **Custom Container**: regular sample block using `InnerBlocks`. This block will let you follow the usage of inner blocks and custom color supports.
+	- **Posts List**: a dynamic gutenberg block that displays configurable number of posts with title, featured image, post meta and excerpt. This block provides extensive code resources when it comes to building dynamic gutenberg block.
+	- **Custom Container**: regular sample block using `InnerBlocks`. This block will let you follow the usage of inner blocks and custom color supports.
 
 👨‍💻 PostCSS ready
 
