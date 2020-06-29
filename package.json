@@ -13,7 +13,7 @@
 	"homepage": "https://github.com/phpbits/wp-block-builder",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/phpbits/wp-block-builder.git",
+		"url": "https://github.com/phpbits/wp-block-builder.git"
 	},
 	"bugs": {
 		"url": "https://github.com/phpbits/wp-block-builder/issues"
@@ -27,7 +27,7 @@
 	],
 	"main": "index.js",
 	"bin": {
-		"wp-block-builder": "./index.js"
+		"create-block": "./index.js"
 	},
 	"dependencies": {
 		"chalk": "^4.0.0",
